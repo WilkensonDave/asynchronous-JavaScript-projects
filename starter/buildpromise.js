@@ -45,16 +45,16 @@ Promise.resolve('anjbkmfvmn,').then(x => console.log(x));
 Promise.reject("rejected").catch(x => console.log(x));
 
 //promise based function
-const getPosition = function(){
-    return new Promise(function(resolve, reject){
-        // navigator.geolocation.getCurrentPosition(position =>{
-        // resolve(position)
-        // }, err =>{
-        //     reject(err);
-        // })
-        navigator.geolocation.getCurrentPosition(resolve, reject);
-    });
-}
+// const getPosition = function(){
+//     return new Promise(function(resolve, reject){
+//         // navigator.geolocation.getCurrentPosition(position =>{
+//         // resolve(position)
+//         // }, err =>{
+//         //     reject(err);
+//         // })
+//         navigator.geolocation.getCurrentPosition(resolve, reject);
+//     });
+// }
 
 getPosition().then(data => console.log(data));
 
